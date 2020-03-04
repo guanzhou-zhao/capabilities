@@ -9,4 +9,4 @@
 ### May not use ref attribute on function component, because they don't have instance.
 ### API or usage
 - `this.textInput = React.createRef() ... <input ref={this.textInput} />`
-- Or `<input ref={element => this.textInput = element } />
+- Or `<input ref={element => this.textInput = element } />`
