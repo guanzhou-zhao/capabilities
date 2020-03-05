@@ -16,6 +16,7 @@
 - HOC is not React API per se.
 - HOC is a JavaScript pattern that embraces React's compositional nature.
 - React Redux's `connect` is HOC.
+- Use HOC for cross-cutting concerns.
 
 ### Conventions of using HOC
 - Don't mutate the original component. Use composition.
