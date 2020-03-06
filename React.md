@@ -29,6 +29,19 @@
 - Ref can't be passed correctly.
 - Static method must be copied over. `import hoistNonReactStatic from 'hoist-non-react-statics';`
 
+## Forwarding Refs
+```
+class WrappedComponent extends React.Component {
+  render() {
+    const {forwardedRef, ...rest} = this.props;
+    ...
+  }
+}
+export default React.forwardRef((props, ref) => {
+    return <WrappedComponent {...props} forwardedRef={ref} />;
+  });
+```
+
 ## Render Props
 ```
 <DataProvider render={data => (
