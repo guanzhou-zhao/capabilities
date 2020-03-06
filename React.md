@@ -58,3 +58,10 @@ function withMouse(Component) {
 ## Uncontrolled Components
 Use `ref` to get values from uncontrolled components.
 
+## Reconciliation
+
+#### Assumption:
+- Two elements of different types produce different trees.
+- Developers can hint at which elements stay stable between renders with `key` prop.
+
+
