@@ -30,15 +30,15 @@
 - Static method must be copied over. `import hoistNonReactStatic from 'hoist-non-react-statics';`
 
 ## Render Props
-`
+```
 <DataProvider render={data => (
   <h1>Hello {data.target}</h1>
 )}/>
-`
+```
 - Render Props of a component is a prop named render which is a function that accepts data from the component and giving back customized dom or component
 - Libraries that use render props include React Router, Downshift and Formik.
 - One interesting thing to note about render props is that you can implement most higher-order components (HOC) using a regular component with a render prop.
-`
+```
 // If you really want a HOC for some reason, you can easily
 // create one using a regular component with a render prop!
 function withMouse(Component) {
@@ -53,4 +53,4 @@ function withMouse(Component) {
     }
   }
 }
-`
+```
