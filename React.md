@@ -54,3 +54,7 @@ function withMouse(Component) {
   }
 }
 ```
+
+## Uncontrolled Components
+Use `ref` to get values from uncontrolled components.
+
