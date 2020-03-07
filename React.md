@@ -103,5 +103,12 @@ LoggedInUserContext.displayName = "LoggedInUserContext"
 ```
 #### Class.contextType = Context   {this.context}
 
-
+## Error Boundaries
+- Use `<ErrorBoundary>` component to wrap subtree.
+- Use `static getDerivedStateFromError()` to render a fallback UI
+- Use `componentDidCatch()` to log error information.
+- Where to put `<ErrorBoundary>` is up to you.
+- Uncaught errors will result in unmounting of the whole React component tree.
+- `<ErrorBoundary>` is only for imperative code.
+- Use `try / catch` to catch the errors inside event handler.
 
