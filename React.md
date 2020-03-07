@@ -112,3 +112,6 @@ LoggedInUserContext.displayName = "LoggedInUserContext"
 - `<ErrorBoundary>` is only for imperative code.
 - Use `try / catch` to catch the errors inside event handler.
 
+## JSX
+- JSX provide syntactic sugar for the `React.createElement(component, props, ...children)`.
+
