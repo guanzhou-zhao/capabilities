@@ -77,4 +77,31 @@ Use `ref` to get values from uncontrolled components.
 - Two elements of different types produce different trees.
 - Developers can hint at which elements stay stable between renders with `key` prop.
 
+## Context
+
+#### React.createContext Context.displayName
+```
+const LoggedInUserContext = React.createContext({name: "guest", tag: 0});
+LoggedInUserContext.displayName = "LoggedInUserContext"
+```
+#### Context.Provider
+```
+<ThemeContext.Provider value="light">
+  <LoggedInUserContext.Provider value={{name:"Ben", tag: 1}}>
+    <h2>App component</h2>
+    <Toolbar />
+  </LoggedInUserContext.Provider>
+</ThemeContext.Provider>
+```
+#### Context.Consumer
+```
+<LoggedInUserContext.Consumer>
+  {
+    (loggedInUser) => <h3>....Toolbar component Hi, {loggedInUser.name}</h3>
+  }
+</LoggedInUserContext.Consumer>
+```
+#### Class.contextType = Context   {this.context}
+
+
 
