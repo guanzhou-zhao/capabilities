@@ -115,3 +115,10 @@ LoggedInUserContext.displayName = "LoggedInUserContext"
 ## JSX
 - JSX provide syntactic sugar for the `React.createElement(component, props, ...children)`.
 
+## Optimizing Performance
+- Use production build
+- Profiling Components with the Chrome Performance Tab
+- Virtualize long lists
+- Avoid Reconciliation
+- shouldComponentUpdate
+- Not mutate data, use new one
